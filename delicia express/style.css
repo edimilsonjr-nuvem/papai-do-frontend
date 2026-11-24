@@ -1,0 +1,193 @@
+
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    border: 3px solid #b22222;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 100px;
+    background-color: #fffdf8;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.30);
+}
+
+/* Título principal */
+h1 {
+    color: #b22222;
+    text-align: center;
+    font-size: 28px;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.30);
+}
+
+/* Texto de apresentação */
+body > p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.12);
+}
+
+/* Títulos das seções */
+h2 {
+    color: #b22222;
+    font-size: 21px;
+    border-bottom: 2px solid #b22222;
+    padding-bottom: 8px;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* Título dos combos */
+.titulo-combos {
+    text-align: center;
+    margin-top: 35px;
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.35);
+    border-bottom: 2px solid #b22222;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.18);
+}
+
+/* Organização dos três primeiros produtos */
+.cardapio {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Produtos individuais */
+.produto {
+    flex: 1;
+    min-width: 100px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #e5caca;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito ao passar o mouse nos produtos */
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.30);
+}
+
+/* Nome e preço dos lanches e combos */
+h5 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Destaque para os nomes dos produtos */
+h5 strong {
+    color: #222;
+}
+
+
+/* Imagens dos três primeiros produtos */
+.produto img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #e5caca;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Área dos combos */
+.combos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+/* Cards dos combos */
+.produto-combo {
+    flex: 1;
+    width: 40%;
+    max-width: 350px;
+    min-width: 220px;
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    border: 2px solid #e5caca;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito ao passar o mouse nos combos */
+.produto-combo:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 9px 22px rgba(0, 0, 0, 0.32);
+}
+
+/* Imagens dos combos */
+.produto-combo img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+/* Preços dos combos */
+.produto-combo p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b22222;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* Botão do WhatsApp */
+.botao {
+    display: block;
+    width: 120px;
+    margin: 15px auto;
+    padding: 12px;
+    background-color: #ffcc00;
+    color: #222;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito ao passar o mouse no botão */
+.botao:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.35);
+}
+
+/* Efeito ao clicar no botão */
+.botao:active {
+    transform: scale(0.97);
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 600px) {
+    body {
+        margin: 15px;
+    }
+
+    .produto-combo {
+        width: 100%;
+        max-width: 100%;
+    }
+}
